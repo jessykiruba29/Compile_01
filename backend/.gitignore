@@ -1,0 +1,4 @@
+.env
+generated.db
+venv/
+__pycache__/

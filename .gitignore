@@ -1,0 +1,215 @@
+# ============================================
+# Python (Backend)
+# ============================================
+
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv
+.env
+backend/.env
+backend/generated.db
+backend/venv/
+
+# Python distributions
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Python tools
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+
+# ============================================
+# Node.js / Next.js (Frontend)
+# ============================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Build outputs
+.next/
+out/
+build/
+dist/
+
+# Cache
+.cache/
+.parcel-cache/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# Next.js files
+.next-build
+.next-server
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# ============================================
+# IDEs and Editors
+# ============================================
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# IntelliJ / WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.~*
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# ============================================
+# OS Generated Files
+# ============================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.dll
+
+# Windows
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+*.orig
+
+# ============================================
+# Logs and Databases
+# ============================================
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# ============================================
+# Application Specific
+# ============================================
+
+# Backend runtime files
+backend/__pycache__/
+backend/*.pyc
+backend/.env
+backend/app.db
+backend/app.sqlite
+
+# Frontend build
+frontend/.next/
+frontend/out/
+frontend/node_modules/
+frontend/.env.local
+
+# API keys / secrets
+*.pem
+*.key
+*.crt
+.secrets/
+secrets.json
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# ============================================
+# Docker
+# ============================================
+
+docker-compose.override.yml
+.dockerignore
+
+# ============================================
+# Misc
+# ============================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Certificates
+*.p12
+*.pfx
+
+# Debug files
+debug.log
+error.log
