@@ -31,13 +31,10 @@ def home():
 
 @app.post("/generate")
 async def generate(request: PromptRequest):
-    """Streaming endpoint for frontend"""
     return StreamingResponse(
         run_pipeline_streaming(request.prompt),
         media_type="text/event-stream",
         headers={
-            "Cache-Control": "no-cache",
-            "Connection": "keep-alive",
-            "X-Accel-Buffering": "no"
+            "Cache-Control": "no-cache"
         }
     )
