@@ -2,6 +2,8 @@
 import { useState, useCallback, useRef } from 'react';
 import type { CompilerState, PipelineStage, LogEntry, CompileMetrics, CompilerOutput } from '@/types';
 
+const backendBaseUrl = (process.env.NEXT_PUBLIC_BACKEND_URL || 'http://localhost:8000').replace(/\/$/, '');
+
 const STAGE_DEFS = [
   { id: 'intent',       index: 0, label: 'Intent Extraction',     sublabel: 'Parse & classify user input' },
   { id: 'architecture', index: 1, label: 'System Design',         sublabel: 'Entities, flows, architecture' },
@@ -62,7 +64,7 @@ export function useCompiler() {
     pushLog(makeLog('debug', 'Launching multi-stage generation pipeline'));
 
     try {
-      const response = await fetch('http://localhost:8000/generate', {
+      const response = await fetch(`${backendBaseUrl}/generate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ prompt }),
