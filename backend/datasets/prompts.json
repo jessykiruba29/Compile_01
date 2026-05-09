@@ -1,0 +1,126 @@
+{
+  "real_product_prompts": [
+    {
+      "id": "RP_001",
+      "prompt": "Build a task management app with users, tasks, due dates, and status tracking",
+      "category": "productivity",
+      "expected_complexity": "medium"
+    },
+    {
+      "id": "RP_002", 
+      "prompt": "Create an e-commerce platform with products, shopping cart, user reviews, and checkout",
+      "category": "ecommerce",
+      "expected_complexity": "high"
+    },
+    {
+      "id": "RP_003",
+      "prompt": "Build a CRM with contact management, deal tracking, email logging, and sales reports",
+      "category": "business",
+      "expected_complexity": "high"
+    },
+    {
+      "id": "RP_004",
+      "prompt": "Create a blog platform with posts, comments, categories, tags, and author profiles",
+      "category": "content",
+      "expected_complexity": "medium"
+    },
+    {
+      "id": "RP_005",
+      "prompt": "Build a project management tool with kanban boards, sprints, team assignments, and file attachments",
+      "category": "productivity",
+      "expected_complexity": "high"
+    },
+    {
+      "id": "RP_006",
+      "prompt": "Create a social media dashboard with post scheduling, analytics, and multi-platform posting",
+      "category": "social",
+      "expected_complexity": "high"
+    },
+    {
+      "id": "RP_007",
+      "prompt": "Build an inventory management system with stock tracking, low stock alerts, and purchase orders",
+      "category": "business",
+      "expected_complexity": "medium"
+    },
+    {
+      "id": "RP_008",
+      "prompt": "Create a learning management system with courses, quizzes, student progress tracking, and certificates",
+      "category": "education",
+      "expected_complexity": "high"
+    },
+    {
+      "id": "RP_009",
+      "prompt": "Build a customer support ticketing system with priority levels, agent assignment, and response templates",
+      "category": "business",
+      "expected_complexity": "medium"
+    },
+    {
+      "id": "RP_010",
+      "prompt": "Create a fitness tracking app with workout plans, exercise logging, progress charts, and goal setting",
+      "category": "health",
+      "expected_complexity": "medium"
+    }
+  ],
+  "edge_cases": [
+    {
+      "id": "EC_001",
+      "prompt": "make app",
+      "type": "vague",
+      "expected_behavior": "ask for clarification or make reasonable assumptions"
+    },
+    {
+      "id": "EC_002",
+      "prompt": "Build a system that does everything",
+      "type": "vague",
+      "expected_behavior": "ask for clarification or make reasonable assumptions"
+    },
+    {
+      "id": "EC_003",
+      "prompt": "Create a blog with posts and comments, but also no comments allowed",
+      "type": "conflicting",
+      "expected_behavior": "detect conflict and resolve"
+    },
+    {
+      "id": "EC_004",
+      "prompt": "Build an app with public and private pages, but no authentication system",
+      "type": "conflicting",
+      "expected_behavior": "detect inconsistency and add auth"
+    },
+    {
+      "id": "EC_005",
+      "prompt": "Create a store with products, cart, and no payments",
+      "type": "incomplete",
+      "expected_behavior": "make reasonable assumptions (add basic payment)"
+    },
+    {
+      "id": "EC_006",
+      "prompt": "Build a CRM with login",
+      "type": "incomplete",
+      "expected_behavior": "infer reasonable defaults (contacts, dashboard)"
+    },
+    {
+      "id": "EC_007",
+      "prompt": "app with users and admins but no user roles defined",
+      "type": "incomplete",
+      "expected_behavior": "add default roles"
+    },
+    {
+      "id": "EC_008",
+      "prompt": "Build a real-time chat app with messages, but no message storage",
+      "type": "conflicting",
+      "expected_behavior": "add storage automatically"
+    },
+    {
+      "id": "EC_009",
+      "prompt": "create",
+      "type": "vague",
+      "expected_behavior": "ask for clarification"
+    },
+    {
+      "id": "EC_010",
+      "prompt": "Build an app with premium gating but no payment system",
+      "type": "incomplete",
+      "expected_behavior": "add payment system automatically"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+test_id,test_type,success,latency_ms,repair_count,error_count,warning_count,timestamp,expected_behavior
+RP_001,real_product,True,40816,0,0,0,2026-05-09T11:20:02.969621,medium
+RP_002,real_product,True,47567,0,0,0,2026-05-09T11:20:50.537768,high
+RP_003,real_product,True,42840,0,0,0,2026-05-09T11:21:33.379304,high
+RP_004,real_product,True,28533,0,0,0,2026-05-09T11:22:01.914490,medium
+RP_005,real_product,True,33675,0,0,0,2026-05-09T11:22:35.590647,high
+RP_006,real_product,True,36960,0,0,0,2026-05-09T11:23:12.552098,high
+RP_007,real_product,True,33890,0,0,0,2026-05-09T11:23:46.443227,medium
+RP_008,real_product,True,27751,0,0,0,2026-05-09T11:24:14.195631,high
+RP_009,real_product,True,35926,0,0,0,2026-05-09T11:24:50.122459,medium
+RP_010,real_product,True,41978,0,0,0,2026-05-09T11:25:32.101269,medium
+EC_001,edge_vague,True,34787,0,0,0,2026-05-09T11:26:06.889398,ask for clarification or make reasonable assumptions
+EC_002,edge_vague,True,17316,0,0,0,2026-05-09T11:26:24.206623,ask for clarification or make reasonable assumptions
+EC_003,edge_conflicting,True,38835,0,0,0,2026-05-09T11:27:03.042313,detect conflict and resolve
+EC_004,edge_conflicting,True,29411,0,0,0,2026-05-09T11:27:32.454324,detect inconsistency and add auth
+EC_005,edge_incomplete,True,49643,0,0,0,2026-05-09T11:28:22.098020,make reasonable assumptions (add basic payment)
+EC_006,edge_incomplete,True,45654,0,0,0,2026-05-09T11:29:07.752815,"infer reasonable defaults (contacts, dashboard)"
+EC_007,edge_incomplete,True,33792,0,0,0,2026-05-09T11:29:41.545332,add default roles
+EC_008,edge_conflicting,True,37395,0,0,0,2026-05-09T11:30:18.940820,add storage automatically
+EC_009,edge_vague,True,30719,0,0,0,2026-05-09T11:30:49.661064,ask for clarification
+EC_010,edge_incomplete,True,25485,0,0,0,2026-05-09T11:31:15.147000,add payment system automatically
